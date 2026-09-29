@@ -1,0 +1,12 @@
+ColorPrimario: #ac7c00
+ColorPrimario: #e72020
+ColorPrimario: #ffa440
+ColorSecundario: #f98338
+ColorSecundario: #ed4128
+ColorSecundario: #f36230
+ColorTerciario: #ea3124
+ColorTerciario: #cd5f14
+ColorTerciario: #d3801c
+ColorTerciario: #fc943c
+ColorTerciario: #f98338
+ColorTerciario: #ed4128

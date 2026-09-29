@@ -1,20 +1,134 @@
+@font-face {
+    font-family: 'SMB';
+    src: url('../src/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+:root {
+    --FondoPagina: #5d94fb;
+    --FondoElem1: #75d11b;
+    --FondoElem2: #fc9838;
+    --ObjectElem1: #ac7c00;
+    --ObjectElem2: #e72020;
+    --ObjectElem3: #ffa440;
+}
 
 body {
+    font-family: 'SMB', sans-serif;
+    background-color: var(--FondoPagina);
+    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.encabezado {
-    background-color: orangered;
+/* ---> SECTOR ENCABEZADO */
+
+.encabezado, .piePagina {
+    background-color: var(--FondoElem1);
     display: flex;
     justify-content: space-between;
     padding: 15px;
 }
 
-.menu{
+.menu, .enlaces {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.menu a, .enlaces a {
+    text-decoration: none;
+    color: white;
+    transition: 0.05s;
+}
+
+.menu a:hover, .enlaces a:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 5px 0px var(--ObjectElem1));
+}
+
+/* ---> SECTOR MAIN */
+
+main, .enlaces {
+    margin: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta img {
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    width: 100%;
+    grid-area: img;
+}
+
+.tarjeta h1 {
+    grid-area: h1;
+}
+
+.tarjeta p {
+    grid-area: p;
+}
+
+.tarjeta {
+    background-color: var(--FondoElem2);
+    border-radius: 15px;
+    border: 5px solid var(--ObjectElem2);
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas:
+        "img h1"
+        "img  p";
+    transition: 0.5s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 10px var(--ObjectElem3));
+}
+
+/* ---> SECTOR FOOTER */
+
+.piePagina {
+    text-align: center;
+    align-items: center;
+}
+
+.redes {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.enlaces {
+    width: 20%;
+    flex-direction: column;
+}
+
+.info {
+    width: 36%;
+}
+
+.redes div a img {
+    width: 50px;
+    transition: 0.05s;
+}
+
+.redes div a img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 3px 3px var(--ObjectElem3));
+}
+
+.redes iframe {
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
 }

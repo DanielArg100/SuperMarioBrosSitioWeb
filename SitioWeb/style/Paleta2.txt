@@ -1,0 +1,12 @@
+ColorPrimario: #5d94fb
+ColorPrimario: #75d11b
+ColorPrimario: #fc9838
+ColorSecundario: #ad969a
+ColorSecundario: #69b38b
+ColorSecundario: #b9b52a
+ColorTerciario: #d59769
+ColorTerciario: #8595cb
+ColorTerciario: #63a4c3
+ColorTerciario: #6fc253
+ColorTerciario: #97c323
+ColorTerciario: #dba731
