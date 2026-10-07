@@ -899,6 +899,8 @@ var PixelRendr = (function () {
                     break;
             }
         }
+
+
         return output;
     };
     /**
