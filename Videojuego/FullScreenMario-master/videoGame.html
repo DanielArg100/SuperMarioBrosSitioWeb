@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>SuperMarioBros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario Bros. | Jugar</title>
     <meta
       name="keywords"
-      content="fullscreenmario, full, screen, mario, javascript, html5, gaming, online, online game, fun, distraction"
+      content="fullscreenmario, super mario bros, mario, javascript, html5, gaming, online game"
     />
-    <meta name="description" content="Sitio Web Sobre Super Mario Bros" />
+    <meta name="description" content="Juega Super Mario Bros. online - Niveles originales y personalizados" />
 
     <!-- build:css index.min.css -->
     <link href="index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../SitioWeb/style/style.css">
+    <link rel="stylesheet" href="../../SitioWeb/style/estilos.css" />
     <!-- /build -->
 
     <link rel="shortcut icon" href="Theme/Mario.gif" />
+    <style>
+      body {
+        background: var(--cielo);
+      }
+      #game {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem;
+        background-image: linear-gradient(
+          to bottom,
+          var(--cielo) 0%,
+          var(--cielo) 90%,
+          var(--tuberia) 90%,
+          var(--tuberia) 100%
+        );
+        min-height: 70vh;
+      }
+      #controls {
+        background-color: var(--noche);
+        color: var(--crema);
+        padding: 2rem;
+        text-align: center;
+        font-family: var(--fuente-pixel);
+        font-size: 0.6rem;
+        border-top: 6px solid var(--ladrillo);
+      }
+      #controls p {
+        margin: 0.5rem 0;
+      }
+    </style>
   </head>
 
   <body>
     <header class="encabezado">
-      <img
-        src="../../Videojuego/FullScreenMario-master/Theme/Mario.gif"
-        alt="logo"
-      />
+      <img src="Theme/Mario.gif" alt="Mario Bros Logo" />
       <nav class="menu">
-        <a href="../../SitioWeb/Pages/index.html"
-          > <- Volver</a
-        >
+        <a href="../../index.html">INICIO</a>
+        <a href="../../SitioWeb/Pages/historia.html">HISTORIA</a>
+        <a href="../../SitioWeb/Pages/controles.html">CONTROLES</a>
+        <a href="../../SitioWeb/Pages/sobreProyecto.html">SOBRE EL PROYECTO</a>
+        <a href="videoGame.html">¡JUGAR!</a>
       </nav>
     </header>
     <section id="game">
@@ -34,7 +64,8 @@
     </section>
 
     <section id="controls">
-      <!-- FSM.UserWrapper will fill out this section... -->
+      <p>CONTROLES: ← → MOVER | ↑ ↓ ENTRAR TUBERÍAS | Z/X SALTAR/CORRER | ENTER PAUSA</p>
+      <p>PARA MÁS INFORMACIÓN VISITA LA SECCIÓN CONTROLES</p>
     </section>
 
     <!-- build:js FullScreenMario.min.js -->
